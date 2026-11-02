@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARGEN AGRO · Tablero del productor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f6f2; --panel:#ffffff; --ink:#1b2a22; --muted:#6b756e; --line:#e4e7e0;
+    --green:#0e4733; --leaf:#5c8e1f; --wheat:#91672d; --soft:#f1f4ec;
+    --up:#3f7d4e; --down:#a6533f; --flat:#8a8f8b;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#111814; --panel:#18211c; --ink:#eaefe8; --muted:#9aa69d; --line:#26322b;
+           --green:#8fc3a4; --leaf:#9cc45e; --wheat:#c99b5c; --soft:#1d2a22;
+           --up:#7fbf8f; --down:#d98a76; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:18px 16px 40px}
+  header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;
+         border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .brand h1{margin:0;font-family:'Montserrat',sans-serif;font-size:1.45rem;font-weight:800;letter-spacing:.01em;color:var(--green);line-height:1}
+  .brand h1 .plus,.brand h1 .agro{color:var(--leaf)}
+  .brand p{margin:7px 0 0;color:var(--muted);font-family:'Montserrat',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+  .brand p::before{content:"";width:18px;height:1px;background:var(--leaf)}
+  .stamp{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--muted);text-align:right}
+  .stamp b{color:var(--ink);font-weight:600}
+
+  section{margin-top:22px}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+  .sec-head h2{margin:0;font-family:'Montserrat',sans-serif;font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;color:var(--green);font-weight:700}
+  .sec-head span{font-size:.75rem;color:var(--muted)}
+
+  .grid{display:grid;gap:10px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g5{grid-template-columns:repeat(5,1fr)}
+  @media (max-width:720px){ .g5{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:520px){ .g3{grid-template-columns:1fr} }
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:0 1px 2px rgba(14,71,51,.04)}
+  .grain{position:relative;overflow:hidden}
+  .grain::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;border-radius:2px;background:var(--wheat);opacity:.7}
+  .grain .name{display:flex;justify-content:space-between;align-items:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.95rem;color:var(--green)}
+  .badge{font-size:.62rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--wheat);
+         border:1px solid var(--wheat);border-radius:99px;padding:2px 7px}
+  .big{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:1.6rem;margin-top:6px;letter-spacing:-.02em}
+  .big small{font-size:.8rem;color:var(--muted);font-weight:500;margin-left:4px}
+  .sub{display:flex;justify-content:space-between;align-items:center;margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:.85rem;color:var(--muted)}
+  .var{font-family:'IBM Plex Mono',monospace;font-size:.8rem;font-weight:500}
+  .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--flat)}
+
+  .mini .label{font-size:.78rem;color:var(--muted);font-weight:600}
+  .mini .val{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:1.15rem;margin-top:4px}
+  .mini .cv{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--muted);margin-top:2px}
+  .mini.hl{border-color:var(--green);background:var(--soft)}
+
+  .others{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:.85rem;color:var(--muted)}
+  .others b{color:var(--ink);font-family:'IBM Plex Mono',monospace;font-weight:500}
+
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+  td{padding:9px 8px;border-bottom:1px solid var(--line)}
+  td.n,th.n{text-align:right;font-family:'IBM Plex Mono',monospace}
+  tr:last-child td{border-bottom:none}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media (max-width:720px){ .two{grid-template-columns:1fr} }
+  .tcard h3{margin:0 0 4px;font-family:'Montserrat',sans-serif;font-size:.9rem;font-weight:700;color:var(--green)}
+  .tcard .src{font-size:.72rem;color:var(--muted);margin-bottom:6px}
+
+  .calc{display:grid;grid-template-columns:minmax(200px,1fr) 2fr;gap:14px;align-items:center}
+  @media (max-width:620px){ .calc{grid-template-columns:1fr} }
+  .calc label{font-size:.8rem;color:var(--muted);font-weight:600;display:block;margin-bottom:6px}
+  .inp{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:0 10px}
+  .inp span{font-family:'IBM Plex Mono',monospace;color:var(--muted)}
+  .inp input{border:0;background:transparent;color:var(--ink);font:500 1.2rem 'IBM Plex Mono',monospace;padding:10px 6px;width:100%;outline:none}
+  .qq{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .qq div{background:var(--bg);border-radius:10px;padding:10px;text-align:center}
+  .qq .g{font-size:.75rem;color:var(--muted);font-weight:600}
+  .qq .q{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:1.2rem;margin-top:2px}
+  .note{font-size:.72rem;color:var(--muted);margin-top:8px}
+  @media (max-width:520px){ .qq .q{font-size:1rem;white-space:nowrap} .others{gap:6px 18px} }
+
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){ .g4{grid-template-columns:repeat(2,1fr)} }
+
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:14px}
+  .seg button{border:0;background:transparent;color:var(--muted);font:600 .85rem 'Inter',sans-serif;padding:8px 16px;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--green);color:#fff}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:620px){ .opts{grid-template-columns:1fr} }
+  .opt{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--bg)}
+  .opt.win{border-color:var(--leaf);background:var(--soft)}
+  .opt h3{margin:0 0 10px;font-size:.92rem;display:flex;justify-content:space-between;align-items:center}
+  .opt h3 em{font-style:normal;font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--leaf);border:1px solid var(--leaf);border-radius:99px;padding:2px 7px;visibility:hidden}
+  .opt.win h3 em{visibility:visible}
+  .fld{margin-bottom:8px}
+  .fld label{font-size:.72rem;color:var(--muted);font-weight:600;display:block;margin-bottom:4px}
+  .fld .inp{background:var(--panel)}
+  .fld .inp input{font-size:1rem;padding:8px 6px}
+  .res{margin-top:6px;padding-top:8px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:baseline}
+  .res span{font-size:.78rem;color:var(--muted)}
+  .res b{font-family:'IBM Plex Mono',monospace;font-weight:500;color:var(--green);font-size:1.35rem}
+  .verdict{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);border-left:2px solid var(--leaf);font-size:.95rem;line-height:1.4}
+  .verdict b{font-family:'IBM Plex Mono',monospace;font-weight:500;color:var(--green)}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+  @media (max-width:620px){ .kpis{grid-template-columns:1fr} }
+  .kpis > div{border:1px solid var(--line);border-radius:10px;padding:10px}
+  .kpis .l{font-size:.7rem;color:var(--muted);font-weight:600}
+  .kpis .v{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:1.05rem;margin-top:2px}
+  .kpis .s{font-size:.7rem;color:var(--muted);margin-top:2px}
+  input[type=date]{border:0;background:transparent;color:var(--ink);font:600 1rem 'IBM Plex Mono',monospace;padding:8px 6px;width:100%;outline:none}
+
+  footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-size:.72rem;color:var(--muted);line-height:1.5}
+  .err{background:var(--panel);border:1px solid var(--down);color:var(--down);padding:14px;border-radius:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1><span class="plus">+</span>MARGEN<span class="agro">AGRO</span></h1>
+      <p>Tablero del productor</p>
+    </div>
+    <div class="stamp">Datos al<br><b id="stamp">—</b></div>
+  </header>
+
+  <div id="app"></div>
+
+  <footer>
+    Valores de referencia, publicados por las fuentes indicadas en cada bloque. La pizarra es precio por tonelada, mercadería disponible puesta en Rosario, pago contado; el valor en US$ usa el dólar divisa comprador BNA que informa la Cámara. “Estimado” indica que no hubo operaciones suficientes para fijar precio y la Cámara publicó un valor estimativo. No constituye recomendación comercial.
+  </footer>
+</div>
+
+<script id="datos-respaldo" type="application/json">
+{"actualizado":"2026-10-30T18:30:00-03:00","actualizado_texto":"Cierre del viernes 30/10/2026","pizarra":{"fecha":"29/10/2026","fuente":"Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario","tc_divisa_bna_comprador":1530.0,"granos":[{"id":"soja","nombre":"Soja","ars":547000,"usd":357.52,"ars_ant":550000,"estimado":true},{"id":"maiz","nombre":"Maíz","ars":275400,"usd":180.0,"ars_ant":277800,"estimado":false},{"id":"trigo","nombre":"Trigo","ars":311000,"usd":203.27,"ars_ant":317300,"estimado":false},{"id":"girasol","nombre":"Girasol","ars":810900,"usd":530.0,"ars_ant":null,"estimado":true},{"id":"sorgo","nombre":"Sorgo","ars":285000,"usd":186.27,"ars_ant":null,"estimado":true}]},"dolar":{"fecha":"30/10/2026","fuente":"BNA, BCRA (mayorista), relevamiento de mercado (MEP, CCL, blue)","cotizaciones":[{"id":"bna","nombre":"Oficial BNA","compra":1510.0,"venta":1560.0},{"id":"mayorista","nombre":"Mayorista","compra":null,"venta":1534.0},{"id":"mep","nombre":"MEP","compra":null,"venta":1568.96},{"id":"ccl","nombre":"CCL","compra":null,"venta":1662.22},{"id":"blue","nombre":"Blue","compra":1545.0,"venta":1565.0}]},"futuros_a3":{"fecha":"30/10/2026","fuente":"A3 Mercados (ex Matba-Rofex), vía BCR","contratos":[{"grano":"Soja","posicion":"Nov 2026","usd":356.2},{"grano":"Maíz","posicion":"Dic 2026","usd":190.0},{"grano":"Trigo","posicion":"Nov 2026","usd":205.0}]},"futuros_cosecha":{"fecha":"29/10/2026","fuente":"A3 Mercados, ajustes informados por BCR","contratos":[{"id":"soja","grano":"Soja","posicion":"Mayo 2027","usd":350.3,"pago_default":"2027-05-15"},{"id":"maiz","grano":"Maíz","posicion":"Abril 2027","usd":190.5,"pago_default":"2027-04-15"},{"id":"trigo","grano":"Trigo","posicion":"Enero 2027","usd":216.7,"pago_default":"2027-01-15"}]},"hacienda":{"fecha":"30/10/2026","fuente":"Mercado Agroganadero de Cañuelas – precios definitivos","categorias":[{"id":"novillo","nombre":"Novillo (INMAG)","ars_kg":4010.33},{"id":"novillito","nombre":"Novillito","ars_kg":4465.84},{"id":"vaquillona","nombre":"Vaquillona","ars_kg":4318.97},{"id":"vaca","nombre":"Vaca","ars_kg":2871.24}],"indice_general":3714.88},"chicago":{"fecha":"30/10/2026","fuente":"CBOT – cierre informado por BCR","contratos":[{"grano":"Soja","posicion":"Nov 2026","usd":449.11,"var":0.64},{"grano":"Maíz","posicion":"Dic 2026","usd":176.27,"var":-1.48},{"grano":"Trigo","posicion":"Dic 2026","usd":221.75,"var":-0.18}]}}
+</script>
+
+<script>
+(function(){
+  const fARS = new Intl.NumberFormat('es-AR',{maximumFractionDigits:0});
+  const f2   = new Intl.NumberFormat('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const f1   = new Intl.NumberFormat('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1});
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  function varHTML(abs, pct, money){
+    if (abs == null) return '<span class="var flat">s/var.</span>';
+    const cls = abs > 0 ? 'up' : abs < 0 ? 'down' : 'flat';
+    const arrow = abs > 0 ? '▲' : abs < 0 ? '▼' : '=';
+    const a = money(Math.abs(abs));
+    const p = pct != null ? ` (${f1.format(Math.abs(pct))}%)` : '';
+    return `<span class="var ${cls}">${arrow} ${a}${p}</span>`;
+  }
+
+  function dolarHTML(D){ return D.cotizaciones.map(q => `
+      <div class="card mini ${q.id === 'bna' ? 'hl' : ''}">
+        <div class="label">${esc(q.nombre)}</div>
+        <div class="val">$ ${f2.format(q.venta)}</div>
+        <div class="cv">${q.compra != null ? 'Compra $ ' + f2.format(q.compra) : 'Venta'}</div>
+      </div>`).join(''); }
+
+  function render(d){
+    document.getElementById('stamp').textContent = d.actualizado_texto || '—';
+    const P = d.pizarra, D = d.dolar, A = d.futuros_a3, C = d.chicago;
+    const main = P.granos.filter(g => ['soja','maiz','trigo'].includes(g.id));
+    const rest = P.granos.filter(g => !['soja','maiz','trigo'].includes(g.id));
+
+    const grainCards = main.map(g => {
+      const abs = g.ars_ant != null ? g.ars - g.ars_ant : null;
+      const pct = g.ars_ant ? abs / g.ars_ant * 100 : null;
+      return `<div class="card grain">
+        <div class="name">${esc(g.nombre)} ${g.estimado ? '<span class="badge">Estimado</span>' : ''}</div>
+        <div class="big">$ ${fARS.format(g.ars)}<small>/t</small></div>
+        <div class="sub"><span>US$ ${f2.format(g.usd)}/t</span>${varHTML(abs, pct, v => '$ ' + fARS.format(v))}</div>
+      </div>`;
+    }).join('');
+
+    const restHTML = rest.map(g =>
+      `<span>${esc(g.nombre)}: <b>$ ${fARS.format(g.ars)}</b> · US$ ${f2.format(g.usd)}${g.estimado ? ' <em>(est.)</em>' : ''}</span>`
+    ).join('');
+
+
+
+    const H = d.hacienda, FC = d.futuros_cosecha;
+    const hacCards = H.categorias.map(c => `
+      <div class="card mini ${c.id === 'novillo' ? 'hl' : ''}">
+        <div class="label">${esc(c.nombre)}</div>
+        <div class="val">$ ${f2.format(c.ars_kg)}</div>
+        <div class="cv">por kg vivo</div>
+      </div>`).join('');
+
+    const a3Rows = A.contratos.map(c => `<tr><td>${esc(c.grano)}</td><td>${esc(c.posicion)}</td><td class="n">${f1.format(c.usd)}</td></tr>`).join('');
+    const chRows = C.contratos.map(c => `<tr><td>${esc(c.grano)}</td><td>${esc(c.posicion)}</td><td class="n">${f2.format(c.usd)}</td><td class="n">${varHTML(c.var, null, v => f2.format(v))}</td></tr>`).join('');
+
+    document.getElementById('app').innerHTML = `
+      <section>
+        <div class="sec-head"><h2>Pizarra Rosario</h2><span>Cámara Arbitral · ${esc(P.fecha)} · dólar divisa BNA $ ${f2.format(P.tc_divisa_bna_comprador)}</span></div>
+        <div class="grid g3">${grainCards}</div>
+        <div class="others">${restHTML}</div>
+      </section>
+
+      <section>
+        <div class="sec-head"><h2>Dólar</h2><span id="dolar-fecha">${esc(D.fecha)} · precio de venta</span></div>
+        <div class="grid g5" id="dolar-grid">${dolarHTML(D)}</div>
+      </section>
+
+      <section>
+        <div class="two">
+          <div class="card tcard">
+            <h3>Futuros A3 (Rosario)</h3>
+            <div class="src">${esc(A.fuente)} · ${esc(A.fecha)}</div>
+            <table><thead><tr><th>Grano</th><th>Posición</th><th class="n">US$/t</th></tr></thead><tbody>${a3Rows}</tbody></table>
+          </div>
+          <div class="card tcard">
+            <h3>Chicago (CBOT)</h3>
+            <div class="src">${esc(C.fuente)} · ${esc(C.fecha)}</div>
+            <table><thead><tr><th>Grano</th><th>Posición</th><th class="n">US$/t</th><th class="n">Var.</th></tr></thead><tbody>${chRows}</tbody></table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><h2>Hacienda · Cañuelas</h2><span>Mercado Agroganadero · ${esc(H.fecha)} · promedios definitivos</span></div>
+        <div class="grid g4">${hacCards}</div>
+        <div class="others"><span>Índice general del mercado: <b>$ ${f2.format(H.indice_general)}</b> /kg</span></div>
+      </section>
+
+      <section>
+        <div class="sec-head"><h2>¿Cuántos quintales necesito?</h2><span>Conversor a precio de pizarra</span></div>
+        <div class="card calc">
+          <div>
+            <label for="monto">Monto del insumo o servicio</label>
+            <div class="inp"><span>US$</span><input id="monto" type="text" inputmode="decimal" value="10.000" autocomplete="off"></div>
+          </div>
+          <div>
+            <div class="qq" id="qq"></div>
+            <div class="note">Referencia bruta a pizarra Rosario en US$; no descuenta flete, comisiones ni gastos de zona.</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><h2>¿Contado o financiado a cosecha?</h2><span>Comparador en quintales</span></div>
+        <div class="card">
+          <div class="seg" id="seg" role="group" aria-label="Grano con el que se paga">
+            ${main.map((g,i) => `<button type="button" data-g="${esc(g.id)}" aria-pressed="${i===0}">${esc(g.nombre)}</button>`).join('')}
+          </div>
+          <div class="opts">
+            <div class="opt" id="optA">
+              <h3>A · Contado hoy <em>Conviene</em></h3>
+              <div class="fld"><label for="cA">Precio del insumo (US$)</label><div class="inp"><span>US$</span><input id="cA" inputmode="decimal" value="10.000" autocomplete="off"></div></div>
+              <div class="fld"><label for="pA">Vendo hoy a (US$/t) · <span id="pAlbl">pizarra</span></label><div class="inp"><span>US$</span><input id="pA" inputmode="decimal" autocomplete="off"></div></div>
+              <div class="res"><span>Quintales a entregar</span><b id="qA">—</b></div>
+            </div>
+            <div class="opt" id="optB">
+              <h3>B · Financiado a cosecha <em>Conviene</em></h3>
+              <div class="fld"><label for="cB">Precio del insumo a cosecha (US$)</label><div class="inp"><span>US$</span><input id="cB" inputmode="decimal" value="12.000" autocomplete="off"></div></div>
+              <div class="fld"><label for="pB">Vendo a futuro a (US$/t) · <span id="pBlbl">A3</span></label><div class="inp"><span>US$</span><input id="pB" inputmode="decimal" autocomplete="off"></div></div>
+              <div class="fld"><label for="fB">Fecha de pago</label><div class="inp"><input id="fB" type="date"></div></div>
+              <div class="res"><span>Quintales a entregar</span><b id="qB">—</b></div>
+            </div>
+          </div>
+          <div class="verdict" id="verdict">—</div>
+          <div class="kpis">
+            <div><div class="l">Recargo por financiar</div><div class="v" id="k1">—</div><div class="s" id="k1s"></div></div>
+            <div><div class="l">Grano a futuro vs. hoy</div><div class="v" id="k2">—</div><div class="s">diferencia de precio de venta</div></div>
+            <div><div class="l">Costo del financiamiento en granos</div><div class="v" id="k3">—</div><div class="s" id="k3s"></div></div>
+          </div>
+          <div class="note">Los precios de venta vienen precargados (pizarra del día y futuro A3 de la posición cosecha) y se pueden cambiar por la oferta real que tenga el productor. La opción B supone que el precio de cosecha se fija hoy (venta de futuro o contrato forward); sin cobertura, la cantidad de quintales queda expuesta a lo que valga el grano al momento de pagar. No incluye comisiones de cobertura, flete, gastos comerciales ni el rendimiento que podría obtenerse con el dinero entre hoy y la fecha de pago.</div>
+        </div>
+      </section>`;
+
+    const input = document.getElementById('monto');
+    const qq = document.getElementById('qq');
+    function calc(){
+      const v = parseFloat(input.value.replace(/\./g,'').replace(',','.')) || 0;
+      qq.innerHTML = main.map(g => `<div><div class="g">${esc(g.nombre)}</div><div class="q">${fARS.format(v / g.usd * 10)} qq</div></div>`).join('');
+    }
+    input.addEventListener('input', calc);
+    calc();
+
+    // ---- Comparador contado vs. financiado a cosecha ----
+    const num = s => parseFloat(String(s).replace(/\./g,'').replace(',','.'));
+    const $ = id => document.getElementById(id);
+    const pct = v => (v >= 0 ? '+' : '−') + f1.format(Math.abs(v * 100)) + '%';
+    let sel = main[0].id;
+
+    function loadGrain(id){
+      sel = id;
+      const g = main.find(x => x.id === id);
+      const fut = FC.contratos.find(x => x.id === id);
+      $('pA').value = f2.format(g.usd);
+      $('pAlbl').textContent = 'pizarra ' + P.fecha + (g.estimado ? ' (est.)' : '');
+      $('pB').value = fut ? f2.format(fut.usd) : '';
+      $('pBlbl').textContent = fut ? 'A3 ' + fut.posicion : 'A3';
+      if (fut) $('fB').value = fut.pago_default;
+      document.querySelectorAll('#seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.g === id)));
+      cmp();
+    }
+
+    function cmp(){
+      const cA = num($('cA').value), pA = num($('pA').value);
+      const cB = num($('cB').value), pB = num($('pB').value);
+      const nombre = main.find(x => x.id === sel).nombre.toLowerCase();
+      const ok = [cA,pA,cB,pB].every(v => isFinite(v) && v > 0);
+      ['optA','optB'].forEach(i => $(i).classList.remove('win'));
+      if (!ok){ ['qA','qB','k1','k2','k3'].forEach(i => $(i).textContent = '—'); $('verdict').textContent = 'Completá los cuatro valores para comparar.'; return; }
+
+      const qA = cA / pA * 10, qB = cB / pB * 10;
+      $('qA').textContent = f1.format(qA) + ' qq';
+      $('qB').textContent = f1.format(qB) + ' qq';
+
+      const hoy = new Date(); hoy.setHours(0,0,0,0);
+      const fp = $('fB').value ? new Date($('fB').value + 'T00:00:00') : null;
+      const dias = fp ? Math.round((fp - hoy) / 864e5) : null;
+      const anual = r => (dias && dias > 0) ? ' · ' + pct(r * 365 / dias) + ' anual' : '';
+
+      const recargo = cB / cA - 1;
+      const difGrano = pB / pA - 1;
+      const costoGrano = qB / qA - 1;
+      $('k1').textContent = pct(recargo) + ' en US$';
+      $('k1s').textContent = dias != null ? (dias > 0 ? dias + ' días' + anual(recargo).replace(' · ', ' · ') : 'revisá la fecha de pago') : '';
+      $('k2').textContent = pct(difGrano);
+      $('k3').textContent = pct(costoGrano);
+      $('k3s').textContent = dias && dias > 0 ? ('medido en ' + nombre + anual(costoGrano)) : 'medido en ' + nombre;
+
+      const diff = qB - qA;
+      if (Math.abs(costoGrano) < 0.005){
+        $('verdict').innerHTML = `Prácticamente <b>indiferente</b>: las dos opciones requieren casi los mismos quintales de ${esc(nombre)}.`;
+      } else if (diff > 0){
+        $('optA').classList.add('win');
+        $('verdict').innerHTML = `Pagando <b>contado</b> entregás <b>${f1.format(diff)} qq</b> menos de ${esc(nombre)} (un ${f1.format(Math.abs(diff)/qB*100)}% menos). El recargo del financiado supera lo que se gana o pierde con el precio a futuro del grano.`;
+      } else {
+        $('optB').classList.add('win');
+        $('verdict').innerHTML = `Pagando <b>financiado a cosecha</b> entregás <b>${f1.format(-diff)} qq</b> menos de ${esc(nombre)} (un ${f1.format(Math.abs(diff)/qA*100)}% menos). El recargo queda compensado por el precio a futuro del grano.`;
+      }
+    }
+
+    document.querySelectorAll('#seg button').forEach(b => b.addEventListener('click', () => loadGrain(b.dataset.g)));
+    ['cA','pA','cB','pB','fB'].forEach(i => $(i).addEventListener('input', cmp));
+    loadGrain(sel);
+  }
+
+
+  // Dólar en vivo (funciona en el sitio publicado; si falla, quedan los valores guardados)
+  function dolarEnVivo(){
+    const ctl = ('AbortController' in window) ? new AbortController() : null;
+    if (ctl) setTimeout(() => ctl.abort(), 6000);
+    fetch('https://dolarapi.com/v1/dolares', {cache:'no-store', signal: ctl ? ctl.signal : undefined})
+      .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(arr => {
+        const by = {}; (arr || []).forEach(x => { if (x && x.casa) by[x.casa] = x; });
+        const map = [['bna','oficial','Oficial BNA'],['mayorista','mayorista','Mayorista'],['mep','bolsa','MEP'],['ccl','contadoconliqui','CCL'],['blue','blue','Blue']];
+        const cot = []; let ult = null;
+        for (const [id, casa, nombre] of map){
+          const x = by[casa]; if (!x || !(x.venta > 0)) throw new Error('falta ' + casa);
+          cot.push({id, nombre, compra: (x.compra > 0 && id !== 'mayorista') ? x.compra : null, venta: x.venta});
+          const t = new Date(x.fechaActualizacion); if (!isNaN(t) && (!ult || t > ult)) ult = t;
+        }
+        const g = document.getElementById('dolar-grid'), f = document.getElementById('dolar-fecha');
+        if (!g || !f) return;
+        g.innerHTML = dolarHTML({cotizaciones: cot});
+        f.textContent = 'En vivo' + (ult ? ' · ' + ult.toLocaleString('es-AR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}) : '') + ' · precio de venta';
+      })
+      .catch(() => {});
+  }
+
+  function respaldo(){
+    try { render(JSON.parse(document.getElementById('datos-respaldo').textContent)); }
+    catch(e){ document.getElementById('app').innerHTML = '<div class="err">No se pudieron cargar los datos.</div>'; }
+  }
+
+  fetch('datos.json', {cache:'no-store'})
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(respaldo)
+    .then(dolarEnVivo);
+})();
+</script>
+</body>
+</html>
