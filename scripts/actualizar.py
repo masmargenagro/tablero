@@ -45,12 +45,14 @@ def main(ruta):
         if q["id"] in vd: salto("dolar", f"dólar {q['id']}", q["venta"], vd[q["id"]]["venta"])
 
     for b in ["futuros_a3", "futuros_cosecha", "chicago"]:
-        vb = {(c["grano"]): c for c in viejo[b]["contratos"]}
+        vb = {(c["grano"], c.get("posicion")): c for c in viejo[b]["contratos"]}
         for c in nuevo[b]["contratos"]:
-            dentro(c["usd"], "usd_t", f"{b} {c['grano']}")
-            ant = vb.get(c["grano"])
-            if ant and ant.get("posicion") == c.get("posicion"):
-                salto(b, f"{b} {c['grano']}", c["usd"], ant["usd"])
+            if c["usd"] is None and b == "futuros_cosecha":
+                continue  # posición sin dato confirmado: la página pide el precio a mano
+            dentro(c["usd"], "usd_t", f"{b} {c['grano']} {c.get('posicion')}")
+            ant = vb.get((c["grano"], c.get("posicion")))
+            if ant and ant.get("usd"):
+                salto(b, f"{b} {c['grano']} {c.get('posicion')}", c["usd"], ant["usd"])
 
     vh = {c["id"]: c for c in viejo["hacienda"]["categorias"]}
     for c in nuevo["hacienda"]["categorias"]:

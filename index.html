@@ -112,6 +112,7 @@
   .kpis .l{font-size:.7rem;color:var(--muted);font-weight:600}
   .kpis .v{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:1.05rem;margin-top:2px}
   .kpis .s{font-size:.7rem;color:var(--muted);margin-top:2px}
+  .inp select{border:0;background:transparent;color:var(--ink);font:500 .95rem 'Inter',sans-serif;padding:9px 2px;width:100%;outline:none;cursor:pointer}
   input[type=date]{border:0;background:transparent;color:var(--ink);font:600 1rem 'IBM Plex Mono',monospace;padding:8px 6px;width:100%;outline:none}
 
   footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-size:.72rem;color:var(--muted);line-height:1.5}
@@ -136,7 +137,7 @@
 </div>
 
 <script id="datos-respaldo" type="application/json">
-{"actualizado":"2026-10-30T18:30:00-03:00","actualizado_texto":"Cierre del viernes 30/10/2026","pizarra":{"fecha":"29/10/2026","fuente":"Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario","tc_divisa_bna_comprador":1530.0,"granos":[{"id":"soja","nombre":"Soja","ars":547000,"usd":357.52,"ars_ant":550000,"estimado":true},{"id":"maiz","nombre":"Maíz","ars":275400,"usd":180.0,"ars_ant":277800,"estimado":false},{"id":"trigo","nombre":"Trigo","ars":311000,"usd":203.27,"ars_ant":317300,"estimado":false},{"id":"girasol","nombre":"Girasol","ars":810900,"usd":530.0,"ars_ant":null,"estimado":true},{"id":"sorgo","nombre":"Sorgo","ars":285000,"usd":186.27,"ars_ant":null,"estimado":true}]},"dolar":{"fecha":"30/10/2026","fuente":"BNA, BCRA (mayorista), relevamiento de mercado (MEP, CCL, blue)","cotizaciones":[{"id":"bna","nombre":"Oficial BNA","compra":1510.0,"venta":1560.0},{"id":"mayorista","nombre":"Mayorista","compra":null,"venta":1534.0},{"id":"mep","nombre":"MEP","compra":null,"venta":1568.96},{"id":"ccl","nombre":"CCL","compra":null,"venta":1662.22},{"id":"blue","nombre":"Blue","compra":1545.0,"venta":1565.0}]},"futuros_a3":{"fecha":"30/10/2026","fuente":"A3 Mercados (ex Matba-Rofex), vía BCR","contratos":[{"grano":"Soja","posicion":"Nov 2026","usd":356.2},{"grano":"Maíz","posicion":"Dic 2026","usd":190.0},{"grano":"Trigo","posicion":"Nov 2026","usd":205.0}]},"futuros_cosecha":{"fecha":"29/10/2026","fuente":"A3 Mercados, ajustes informados por BCR","contratos":[{"id":"soja","grano":"Soja","posicion":"Mayo 2027","usd":350.3,"pago_default":"2027-05-15"},{"id":"maiz","grano":"Maíz","posicion":"Abril 2027","usd":190.5,"pago_default":"2027-04-15"},{"id":"trigo","grano":"Trigo","posicion":"Enero 2027","usd":216.7,"pago_default":"2027-01-15"}]},"hacienda":{"fecha":"30/10/2026","fuente":"Mercado Agroganadero de Cañuelas – precios definitivos","categorias":[{"id":"novillo","nombre":"Novillo (INMAG)","ars_kg":4010.33},{"id":"novillito","nombre":"Novillito","ars_kg":4465.84},{"id":"vaquillona","nombre":"Vaquillona","ars_kg":4318.97},{"id":"vaca","nombre":"Vaca","ars_kg":2871.24}],"indice_general":3714.88},"chicago":{"fecha":"30/10/2026","fuente":"CBOT – cierre informado por BCR","contratos":[{"grano":"Soja","posicion":"Nov 2026","usd":449.11,"var":0.64},{"grano":"Maíz","posicion":"Dic 2026","usd":176.27,"var":-1.48},{"grano":"Trigo","posicion":"Dic 2026","usd":221.75,"var":-0.18}]}}
+{"actualizado":"2026-10-30T18:30:00-03:00","actualizado_texto":"Cierre del viernes 30/10/2026","pizarra":{"fecha":"29/10/2026","fuente":"Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario","tc_divisa_bna_comprador":1530.0,"granos":[{"id":"soja","nombre":"Soja","ars":547000,"usd":357.52,"ars_ant":550000,"estimado":true},{"id":"maiz","nombre":"Maíz","ars":275400,"usd":180.0,"ars_ant":277800,"estimado":false},{"id":"trigo","nombre":"Trigo","ars":311000,"usd":203.27,"ars_ant":317300,"estimado":false},{"id":"girasol","nombre":"Girasol","ars":810900,"usd":530.0,"ars_ant":null,"estimado":true},{"id":"sorgo","nombre":"Sorgo","ars":285000,"usd":186.27,"ars_ant":null,"estimado":true}]},"dolar":{"fecha":"30/10/2026","fuente":"BNA, BCRA (mayorista), relevamiento de mercado (MEP, CCL, blue)","cotizaciones":[{"id":"bna","nombre":"Oficial BNA","compra":1510.0,"venta":1560.0},{"id":"mayorista","nombre":"Mayorista","compra":null,"venta":1534.0},{"id":"mep","nombre":"MEP","compra":null,"venta":1568.96},{"id":"ccl","nombre":"CCL","compra":null,"venta":1662.22},{"id":"blue","nombre":"Blue","compra":1545.0,"venta":1565.0}]},"futuros_a3":{"fecha":"30/10/2026","fuente":"A3 Mercados (ex Matba-Rofex), vía BCR","contratos":[{"grano":"Soja","posicion":"Nov 2026","usd":356.2},{"grano":"Maíz","posicion":"Dic 2026","usd":190.0},{"grano":"Trigo","posicion":"Nov 2026","usd":205.0}]},"futuros_cosecha":{"fecha":"29/10/2026","fuente":"A3 Mercados, ajustes informados por BCR","contratos":[{"id":"soja","grano":"Soja","posicion":"Mayo 2027","usd":350.3,"pago_default":"2027-05-15"},{"id":"soja","grano":"Soja","posicion":"Julio 2027","usd":null,"pago_default":"2027-07-15"},{"id":"maiz","grano":"Maíz","posicion":"Abril 2027","usd":190.5,"pago_default":"2027-04-15"},{"id":"maiz","grano":"Maíz","posicion":"Julio 2027","usd":null,"pago_default":"2027-07-15"},{"id":"trigo","grano":"Trigo","posicion":"Enero 2027","usd":216.7,"pago_default":"2027-01-15"},{"id":"trigo","grano":"Trigo","posicion":"Marzo 2027","usd":null,"pago_default":"2027-03-15"}]},"hacienda":{"fecha":"30/10/2026","fuente":"Mercado Agroganadero de Cañuelas – precios definitivos","categorias":[{"id":"novillo","nombre":"Novillo (INMAG)","ars_kg":4010.33},{"id":"novillito","nombre":"Novillito","ars_kg":4465.84},{"id":"vaquillona","nombre":"Vaquillona","ars_kg":4318.97},{"id":"vaca","nombre":"Vaca","ars_kg":2871.24}],"indice_general":3714.88},"chicago":{"fecha":"30/10/2026","fuente":"CBOT – cierre informado por BCR","contratos":[{"grano":"Soja","posicion":"Nov 2026","usd":449.11,"var":0.64},{"grano":"Maíz","posicion":"Dic 2026","usd":176.27,"var":-1.48},{"grano":"Trigo","posicion":"Dic 2026","usd":221.75,"var":-0.18}]}}
 </script>
 
 <script>
@@ -258,6 +259,7 @@
             <div class="opt" id="optB">
               <h3>B · Financiado a cosecha <em>Conviene</em></h3>
               <div class="fld"><label for="cB">Precio del insumo a cosecha (US$)</label><div class="inp"><span>US$</span><input id="cB" inputmode="decimal" value="12.000" autocomplete="off"></div></div>
+              <div class="fld"><label for="posB">Posición a futuro (A3)</label><div class="inp"><select id="posB"></select></div></div>
               <div class="fld"><label for="pB">Vendo a futuro a (US$/t) · <span id="pBlbl">A3</span></label><div class="inp"><span>US$</span><input id="pB" inputmode="decimal" autocomplete="off"></div></div>
               <div class="fld"><label for="fB">Fecha de pago</label><div class="inp"><input id="fB" type="date"></div></div>
               <div class="res"><span>Quintales a entregar</span><b id="qB">—</b></div>
@@ -269,7 +271,7 @@
             <div><div class="l">Grano a futuro vs. hoy</div><div class="v" id="k2">—</div><div class="s">diferencia de precio de venta</div></div>
             <div><div class="l">Costo del financiamiento en granos</div><div class="v" id="k3">—</div><div class="s" id="k3s"></div></div>
           </div>
-          <div class="note">Los precios de venta vienen precargados (pizarra del día y futuro A3 de la posición cosecha) y se pueden cambiar por la oferta real que tenga el productor. La opción B supone que el precio de cosecha se fija hoy (venta de futuro o contrato forward); sin cobertura, la cantidad de quintales queda expuesta a lo que valga el grano al momento de pagar. No incluye comisiones de cobertura, flete, gastos comerciales ni el rendimiento que podría obtenerse con el dinero entre hoy y la fecha de pago.</div>
+          <div class="note">Los precios de venta vienen precargados (pizarra del día y futuro A3 de la posición elegida) y se pueden cambiar por la oferta real que tenga el productor. La opción B supone que el precio de cosecha se fija hoy (venta de futuro o contrato forward); sin cobertura, la cantidad de quintales queda expuesta a lo que valga el grano al momento de pagar. No incluye comisiones de cobertura, flete, gastos comerciales ni el rendimiento que podría obtenerse con el dinero entre hoy y la fecha de pago.</div>
         </div>
       </section>`;
 
@@ -291,13 +293,22 @@
     function loadGrain(id){
       sel = id;
       const g = main.find(x => x.id === id);
-      const fut = FC.contratos.find(x => x.id === id);
+      const pos = FC.contratos.filter(x => x.id === id);
       $('pA').value = f2.format(g.usd);
       $('pAlbl').textContent = 'pizarra ' + P.fecha + (g.estimado ? ' (est.)' : '');
-      $('pB').value = fut ? f2.format(fut.usd) : '';
-      $('pBlbl').textContent = fut ? 'A3 ' + fut.posicion : 'A3';
-      if (fut) $('fB').value = fut.pago_default;
+      $('posB').innerHTML = pos.map((c, i) => `<option value="${i}">${esc(c.posicion)}${c.usd ? ' · US$ ' + f1.format(c.usd) : ' · sin dato'}</option>`).join('');
+      cargarPos();
       document.querySelectorAll('#seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.g === id)));
+      cmp();
+    }
+
+    function cargarPos(){
+      const pos = FC.contratos.filter(x => x.id === sel);
+      const fut = pos[+$('posB').value || 0];
+      if (!fut){ $('pB').value = ''; $('pBlbl').textContent = 'ingresá el precio'; return cmp(); }
+      $('pB').value = fut.usd ? f2.format(fut.usd) : '';
+      $('pBlbl').textContent = fut.usd ? 'A3 ' + fut.posicion + ' · ' + FC.fecha : 'sin dato publicado: ingresá el precio';
+      $('fB').value = fut.pago_default;
       cmp();
     }
 
@@ -341,6 +352,7 @@
 
     document.querySelectorAll('#seg button').forEach(b => b.addEventListener('click', () => loadGrain(b.dataset.g)));
     ['cA','pA','cB','pB','fB'].forEach(i => $(i).addEventListener('input', cmp));
+    $('posB').addEventListener('change', cargarPos);
     loadGrain(sel);
   }
 
