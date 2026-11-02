@@ -4,52 +4,158 @@
   "pizarra": {
     "fecha": "29/10/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1530.00,
+    "tc_divisa_bna_comprador": 1530.0,
     "granos": [
-      { "id": "soja",    "nombre": "Soja",    "ars": 547000, "usd": 357.52, "ars_ant": 550000, "estimado": true },
-      { "id": "maiz",    "nombre": "Maíz",    "ars": 275400, "usd": 180.00, "ars_ant": 277800, "estimado": false },
-      { "id": "trigo",   "nombre": "Trigo",   "ars": 311000, "usd": 203.27, "ars_ant": 317300, "estimado": false },
-      { "id": "girasol", "nombre": "Girasol", "ars": 810900, "usd": 530.00, "ars_ant": null,   "estimado": true },
-      { "id": "sorgo",   "nombre": "Sorgo",   "ars": 285000, "usd": 186.27, "ars_ant": null,   "estimado": true }
+      {
+        "id": "soja",
+        "nombre": "Soja",
+        "ars": 547000,
+        "usd": 357.52,
+        "ars_ant": 550000,
+        "estimado": true
+      },
+      {
+        "id": "maiz",
+        "nombre": "Maíz",
+        "ars": 275400,
+        "usd": 180.0,
+        "ars_ant": 277800,
+        "estimado": false
+      },
+      {
+        "id": "trigo",
+        "nombre": "Trigo",
+        "ars": 311000,
+        "usd": 203.27,
+        "ars_ant": 317300,
+        "estimado": false
+      },
+      {
+        "id": "girasol",
+        "nombre": "Girasol",
+        "ars": 810900,
+        "usd": 530.0,
+        "ars_ant": null,
+        "estimado": true
+      },
+      {
+        "id": "sorgo",
+        "nombre": "Sorgo",
+        "ars": 285000,
+        "usd": 186.27,
+        "ars_ant": null,
+        "estimado": true
+      }
     ]
   },
   "dolar": {
     "fecha": "30/10/2026",
     "fuente": "BNA, BCRA (mayorista), relevamiento de mercado (MEP, CCL, blue)",
     "cotizaciones": [
-      { "id": "bna",       "nombre": "Oficial BNA",  "compra": 1510.00, "venta": 1560.00 },
-      { "id": "mayorista", "nombre": "Mayorista",    "compra": null,    "venta": 1534.00 },
-      { "id": "mep",       "nombre": "MEP",          "compra": null,    "venta": 1568.96 },
-      { "id": "ccl",       "nombre": "CCL",          "compra": null,    "venta": 1662.22 },
-      { "id": "blue",      "nombre": "Blue",         "compra": 1545.00, "venta": 1565.00 }
+      {
+        "id": "bna",
+        "nombre": "Oficial BNA",
+        "compra": 1510.0,
+        "venta": 1560.0
+      },
+      {
+        "id": "mayorista",
+        "nombre": "Mayorista",
+        "compra": null,
+        "venta": 1534.0
+      },
+      {
+        "id": "mep",
+        "nombre": "MEP",
+        "compra": null,
+        "venta": 1568.96
+      },
+      {
+        "id": "ccl",
+        "nombre": "CCL",
+        "compra": null,
+        "venta": 1662.22
+      },
+      {
+        "id": "blue",
+        "nombre": "Blue",
+        "compra": 1545.0,
+        "venta": 1565.0
+      }
     ]
   },
   "futuros_a3": {
     "fecha": "30/10/2026",
     "fuente": "A3 Mercados (ex Matba-Rofex), vía BCR",
     "contratos": [
-      { "grano": "Soja",  "posicion": "Nov 2026", "usd": 356.2 },
-      { "grano": "Maíz",  "posicion": "Dic 2026", "usd": 190.0 },
-      { "grano": "Trigo", "posicion": "Nov 2026", "usd": 205.0 }
+      {
+        "grano": "Soja",
+        "posicion": "Nov 2026",
+        "usd": 356.2
+      },
+      {
+        "grano": "Maíz",
+        "posicion": "Dic 2026",
+        "usd": 190.0
+      },
+      {
+        "grano": "Trigo",
+        "posicion": "Nov 2026",
+        "usd": 205.0
+      }
     ]
   },
   "futuros_cosecha": {
     "fecha": "29/10/2026",
     "fuente": "A3 Mercados, ajustes informados por BCR",
     "contratos": [
-      { "id": "soja",  "grano": "Soja",  "posicion": "Mayo 2027",  "usd": 350.3, "pago_default": "2027-05-15" },
-      { "id": "maiz",  "grano": "Maíz",  "posicion": "Abril 2027", "usd": 190.5, "pago_default": "2027-04-15" },
-      { "id": "trigo", "grano": "Trigo", "posicion": "Enero 2027", "usd": 216.7, "pago_default": "2027-01-15" }
+      {
+        "id": "soja",
+        "grano": "Soja",
+        "posicion": "Mayo 2027",
+        "usd": 350.3,
+        "pago_default": "2027-05-15"
+      },
+      {
+        "id": "maiz",
+        "grano": "Maíz",
+        "posicion": "Abril 2027",
+        "usd": 190.5,
+        "pago_default": "2027-04-15"
+      },
+      {
+        "id": "trigo",
+        "grano": "Trigo",
+        "posicion": "Enero 2027",
+        "usd": 216.7,
+        "pago_default": "2027-01-15"
+      }
     ]
   },
   "hacienda": {
     "fecha": "30/10/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
-      { "id": "novillo",    "nombre": "Novillo (INMAG)", "ars_kg": 4010.33 },
-      { "id": "novillito",  "nombre": "Novillito",       "ars_kg": 4465.84 },
-      { "id": "vaquillona", "nombre": "Vaquillona",      "ars_kg": 4318.97 },
-      { "id": "vaca",       "nombre": "Vaca",            "ars_kg": 2871.24 }
+      {
+        "id": "novillo",
+        "nombre": "Novillo (INMAG)",
+        "ars_kg": 4010.33
+      },
+      {
+        "id": "novillito",
+        "nombre": "Novillito",
+        "ars_kg": 4465.84
+      },
+      {
+        "id": "vaquillona",
+        "nombre": "Vaquillona",
+        "ars_kg": 4318.97
+      },
+      {
+        "id": "vaca",
+        "nombre": "Vaca",
+        "ars_kg": 2871.24
+      }
     ],
     "indice_general": 3714.88
   },
@@ -57,9 +163,24 @@
     "fecha": "30/10/2026",
     "fuente": "CBOT – cierre informado por BCR",
     "contratos": [
-      { "grano": "Soja",  "posicion": "Nov 2026", "usd": 449.11, "var": 0.64 },
-      { "grano": "Maíz",  "posicion": "Dic 2026", "usd": 176.27, "var": -1.48 },
-      { "grano": "Trigo", "posicion": "Dic 2026", "usd": 221.75, "var": -0.18 }
+      {
+        "grano": "Soja",
+        "posicion": "Nov 2026",
+        "usd": 449.11,
+        "var": 0.64
+      },
+      {
+        "grano": "Maíz",
+        "posicion": "Dic 2026",
+        "usd": 176.27,
+        "var": -1.48
+      },
+      {
+        "grano": "Trigo",
+        "posicion": "Dic 2026",
+        "usd": 221.75,
+        "var": -0.18
+      }
     ]
   }
 }
