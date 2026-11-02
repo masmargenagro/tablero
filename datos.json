@@ -1,80 +1,80 @@
 {
-  "actualizado": "2026-10-30T18:30:00-03:00",
-  "actualizado_texto": "Cierre del viernes 30/10/2026",
+  "actualizado": "2026-11-02T19:20:00-03:00",
+  "actualizado_texto": "Lunes 02/11/2026, 19:20 h",
   "pizarra": {
-    "fecha": "29/10/2026",
+    "fecha": "30/10/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1530.0,
+    "tc_divisa_bna_comprador": 1525.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 547000,
-        "usd": 357.52,
-        "ars_ant": 550000,
+        "ars": 544000,
+        "usd": 356.72,
+        "ars_ant": 547000,
         "estimado": true
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 275400,
-        "usd": 180.0,
-        "ars_ant": 277800,
-        "estimado": false
+        "ars": 273300,
+        "usd": 179.21,
+        "ars_ant": 275400,
+        "estimado": true
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 311000,
-        "usd": 203.27,
-        "ars_ant": 317300,
+        "ars": 312500,
+        "usd": 204.92,
+        "ars_ant": 311000,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 810900,
+        "ars": 808250,
         "usd": 530.0,
-        "ars_ant": null,
+        "ars_ant": 810900,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 285000,
-        "usd": 186.27,
-        "ars_ant": null,
+        "ars": 282125,
+        "usd": 185.0,
+        "ars_ant": 285000,
         "estimado": true
       }
     ]
   },
   "dolar": {
-    "fecha": "30/10/2026",
+    "fecha": "02/11/2026",
     "fuente": "BNA, BCRA (mayorista), relevamiento de mercado (MEP, CCL, blue)",
     "cotizaciones": [
       {
         "id": "bna",
         "nombre": "Oficial BNA",
-        "compra": 1510.0,
-        "venta": 1560.0
+        "compra": 1515.0,
+        "venta": 1565.0
       },
       {
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1534.0
+        "venta": 1545.5
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1568.96
+        "venta": 1568.78
       },
       {
         "id": "ccl",
         "nombre": "CCL",
         "compra": null,
-        "venta": 1662.22
+        "venta": 1656.65
       },
       {
         "id": "blue",
