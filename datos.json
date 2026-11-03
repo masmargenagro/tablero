@@ -55,9 +55,9 @@
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1525.0,
+        "compra": 1536.5,
         "venta": null,
-        "fecha": "30/10/2026"
+        "fecha": "02/11/2026"
       },
       {
         "id": "bna",
