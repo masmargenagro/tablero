@@ -1,49 +1,49 @@
 {
-  "actualizado": "2026-11-02T19:20:00-03:00",
-  "actualizado_texto": "Lunes 02/11/2026, 19:20 h",
+  "actualizado": "2026-11-03T14:30:00-03:00",
+  "actualizado_texto": "Martes 03/11/2026, 14:30 h",
   "pizarra": {
-    "fecha": "30/10/2026",
+    "fecha": "02/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1525.0,
+    "tc_divisa_bna_comprador": 1536.5,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 544000,
-        "usd": 356.72,
-        "ars_ant": 547000,
-        "estimado": true
+        "ars": 542000,
+        "usd": 352.75,
+        "ars_ant": 544000,
+        "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 273300,
-        "usd": 179.21,
-        "ars_ant": 275400,
-        "estimado": true
+        "ars": 275000,
+        "usd": 178.98,
+        "ars_ant": 273300,
+        "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 312500,
-        "usd": 204.92,
-        "ars_ant": 311000,
+        "ars": 314980,
+        "usd": 205.0,
+        "ars_ant": 312500,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 808250,
-        "usd": 530.0,
-        "ars_ant": 810900,
+        "ars": 799000,
+        "usd": 520.01,
+        "ars_ant": 808250,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 282125,
+        "ars": 284250,
         "usd": 185.0,
-        "ars_ant": 285000,
+        "ars_ant": 282125,
         "estimado": true
       }
     ]
@@ -238,26 +238,26 @@
     "indice_general": 3714.88
   },
   "chicago": {
-    "fecha": "30/10/2026",
+    "fecha": "02/11/2026",
     "fuente": "CBOT – cierre informado por BCR",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 449.11,
-        "var": 0.64
+        "usd": 442.67,
+        "var": -6.52
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 176.27,
-        "var": -1.48
+        "usd": 176.47,
+        "var": 0.2
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 221.75,
-        "var": -0.18
+        "usd": 222.85,
+        "var": 0.92
       }
     ]
   }
