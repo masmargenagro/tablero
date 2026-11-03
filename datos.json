@@ -50,8 +50,15 @@
   },
   "dolar": {
     "fecha": "02/11/2026",
-    "fuente": "BNA, BCRA (mayorista), relevamiento de mercado (MEP, CCL, blue)",
+    "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
+      {
+        "id": "divisa",
+        "nombre": "Divisa BNA",
+        "compra": 1525.0,
+        "venta": null,
+        "fecha": "30/10/2026"
+      },
       {
         "id": "bna",
         "nombre": "Oficial BNA",
@@ -69,12 +76,6 @@
         "nombre": "MEP",
         "compra": null,
         "venta": 1568.78
-      },
-      {
-        "id": "ccl",
-        "nombre": "CCL",
-        "compra": null,
-        "venta": 1656.65
       },
       {
         "id": "blue",
@@ -112,6 +113,13 @@
       {
         "id": "soja",
         "grano": "Soja",
+        "posicion": "Enero 2027",
+        "usd": null,
+        "pago_default": "2027-01-15"
+      },
+      {
+        "id": "soja",
+        "grano": "Soja",
         "posicion": "Mayo 2027",
         "usd": 350.3,
         "pago_default": "2027-05-15"
@@ -122,6 +130,20 @@
         "posicion": "Julio 2027",
         "usd": null,
         "pago_default": "2027-07-15"
+      },
+      {
+        "id": "soja",
+        "grano": "Soja",
+        "posicion": "Septiembre 2027",
+        "usd": null,
+        "pago_default": "2027-09-15"
+      },
+      {
+        "id": "soja",
+        "grano": "Soja",
+        "posicion": "Noviembre 2027",
+        "usd": null,
+        "pago_default": "2027-11-15"
       },
       {
         "id": "maiz",
@@ -138,6 +160,27 @@
         "pago_default": "2027-07-15"
       },
       {
+        "id": "maiz",
+        "grano": "Maíz",
+        "posicion": "Septiembre 2027",
+        "usd": null,
+        "pago_default": "2027-09-15"
+      },
+      {
+        "id": "maiz",
+        "grano": "Maíz",
+        "posicion": "Diciembre 2027",
+        "usd": null,
+        "pago_default": "2027-12-15"
+      },
+      {
+        "id": "trigo",
+        "grano": "Trigo",
+        "posicion": "Diciembre 2026",
+        "usd": null,
+        "pago_default": "2026-12-15"
+      },
+      {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Enero 2027",
@@ -150,6 +193,20 @@
         "posicion": "Marzo 2027",
         "usd": null,
         "pago_default": "2027-03-15"
+      },
+      {
+        "id": "trigo",
+        "grano": "Trigo",
+        "posicion": "Julio 2027",
+        "usd": null,
+        "pago_default": "2027-07-15"
+      },
+      {
+        "id": "trigo",
+        "grano": "Trigo",
+        "posicion": "Diciembre 2027",
+        "usd": null,
+        "pago_default": "2027-12-15"
       }
     ]
   },

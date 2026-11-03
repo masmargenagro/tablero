@@ -41,8 +41,8 @@ def main(ruta):
 
     vd = {q["id"]: q for q in viejo["dolar"]["cotizaciones"]}
     for q in nuevo["dolar"]["cotizaciones"]:
-        dentro(q["venta"], "tc", f"dólar {q['id']}")
-        if q["id"] in vd: salto("dolar", f"dólar {q['id']}", q["venta"], vd[q["id"]]["venta"])
+        dentro(q.get("venta") or q.get("compra"), "tc", f"dólar {q['id']}")
+        if q["id"] in vd: salto("dolar", f"dólar {q['id']}", q.get("venta") or q.get("compra"), vd[q["id"]].get("venta") or vd[q["id"]].get("compra"))
 
     for b in ["futuros_a3", "futuros_cosecha", "chicago"]:
         vb = {(c["grano"], c.get("posicion")): c for c in viejo[b]["contratos"]}
