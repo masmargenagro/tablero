@@ -1,63 +1,63 @@
 {
-  "actualizado": "2026-11-04T09:41:00-03:00",
-  "actualizado_texto": "Miércoles 04/11/2026, 09:41 h",
+  "actualizado": "2026-11-04T21:41:00-03:00",
+  "actualizado_texto": "Miércoles 04/11/2026, 21:41 h",
   "pizarra": {
-    "fecha": "02/11/2026",
+    "fecha": "03/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1536.5,
+    "tc_divisa_bna_comprador": 1542.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 542000,
-        "usd": 352.75,
-        "ars_ant": 544000,
+        "ars": 540500,
+        "usd": 350.52,
+        "ars_ant": 542000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 275000,
-        "usd": 178.98,
-        "ars_ant": 273300,
+        "ars": 272934,
+        "usd": 177.0,
+        "ars_ant": 275000,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 314980,
-        "usd": 205.0,
-        "ars_ant": 312500,
+        "ars": 316000,
+        "usd": 204.93,
+        "ars_ant": 314980,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 799000,
-        "usd": 520.01,
-        "ars_ant": 808250,
+        "ars": 794130,
+        "usd": 515.0,
+        "ars_ant": 799000,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 284250,
+        "ars": 285270,
         "usd": 185.0,
-        "ars_ant": 282125,
+        "ars_ant": 284250,
         "estimado": true
       }
     ]
   },
   "dolar": {
-    "fecha": "03/11/2026",
+    "fecha": "04/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1536.5,
+        "compra": 1542.0,
         "venta": null,
-        "fecha": "02/11/2026"
+        "fecha": "03/11/2026"
       },
       {
         "id": "bna",
@@ -69,13 +69,13 @@
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1551.0
+        "venta": 1546.0
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1571.91
+        "venta": 1584.76
       },
       {
         "id": "blue",
@@ -211,31 +211,31 @@
     ]
   },
   "hacienda": {
-    "fecha": "03/11/2026",
+    "fecha": "04/11/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
       {
         "id": "novillo",
         "nombre": "Novillo (INMAG)",
-        "ars_kg": 4170.72
+        "ars_kg": 3945.86
       },
       {
         "id": "novillito",
         "nombre": "Novillito",
-        "ars_kg": 4462.94
+        "ars_kg": 4491.44
       },
       {
         "id": "vaquillona",
         "nombre": "Vaquillona",
-        "ars_kg": 4295.08
+        "ars_kg": 4185.28
       },
       {
         "id": "vaca",
         "nombre": "Vaca",
-        "ars_kg": 3012.6
+        "ars_kg": 2908.73
       }
     ],
-    "indice_general": 3933.82
+    "indice_general": 3685.35
   },
   "chicago": {
     "fecha": "03/11/2026",
