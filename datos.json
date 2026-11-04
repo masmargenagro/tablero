@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-03T21:41:00-03:00",
-  "actualizado_texto": "Martes 03/11/2026, 21:41 h",
+  "actualizado": "2026-11-04T09:41:00-03:00",
+  "actualizado_texto": "Miércoles 04/11/2026, 09:41 h",
   "pizarra": {
     "fecha": "02/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
@@ -86,18 +86,18 @@
     ]
   },
   "futuros_a3": {
-    "fecha": "30/10/2026",
+    "fecha": "03/11/2026",
     "fuente": "A3 Mercados (ex Matba-Rofex), vía BCR",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 356.2
+        "usd": 351.5
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 190.0
+        "usd": 187.4
       },
       {
         "grano": "Trigo",
@@ -107,98 +107,98 @@
     ]
   },
   "futuros_cosecha": {
-    "fecha": "29/10/2026",
+    "fecha": "03/11/2026",
     "fuente": "A3 Mercados, ajustes informados por BCR",
     "contratos": [
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Enero 2027",
-        "usd": null,
+        "usd": 356.0,
         "pago_default": "2027-01-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Mayo 2027",
-        "usd": 350.3,
+        "usd": 343.5,
         "pago_default": "2027-05-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Julio 2027",
-        "usd": null,
+        "usd": 353.6,
         "pago_default": "2027-07-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Septiembre 2027",
-        "usd": null,
+        "usd": 358.0,
         "pago_default": "2027-09-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Noviembre 2027",
-        "usd": null,
+        "usd": 363.0,
         "pago_default": "2027-11-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Abril 2027",
-        "usd": 190.5,
+        "usd": 187.6,
         "pago_default": "2027-04-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Julio 2027",
-        "usd": null,
+        "usd": 186.4,
         "pago_default": "2027-07-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Septiembre 2027",
-        "usd": null,
+        "usd": 191.0,
         "pago_default": "2027-09-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Diciembre 2027",
-        "usd": null,
+        "usd": 196.0,
         "pago_default": "2027-12-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Diciembre 2026",
-        "usd": null,
+        "usd": 206.0,
         "pago_default": "2026-12-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Enero 2027",
-        "usd": 216.7,
+        "usd": 212.0,
         "pago_default": "2027-01-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Marzo 2027",
-        "usd": null,
+        "usd": 220.0,
         "pago_default": "2027-03-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Julio 2027",
-        "usd": null,
+        "usd": 227.0,
         "pago_default": "2027-07-15"
       },
       {
