@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-03T14:30:00-03:00",
-  "actualizado_texto": "Martes 03/11/2026, 14:30 h",
+  "actualizado": "2026-11-03T21:41:00-03:00",
+  "actualizado_texto": "Martes 03/11/2026, 21:41 h",
   "pizarra": {
     "fecha": "02/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
@@ -49,7 +49,7 @@
     ]
   },
   "dolar": {
-    "fecha": "02/11/2026",
+    "fecha": "03/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
@@ -62,20 +62,20 @@
       {
         "id": "bna",
         "nombre": "Oficial BNA",
-        "compra": 1515.0,
-        "venta": 1565.0
+        "compra": 1520.0,
+        "venta": 1570.0
       },
       {
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1545.5
+        "venta": 1551.0
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1568.78
+        "venta": 1571.91
       },
       {
         "id": "blue",
@@ -211,53 +211,53 @@
     ]
   },
   "hacienda": {
-    "fecha": "30/10/2026",
+    "fecha": "03/11/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
       {
         "id": "novillo",
         "nombre": "Novillo (INMAG)",
-        "ars_kg": 4010.33
+        "ars_kg": 4170.72
       },
       {
         "id": "novillito",
         "nombre": "Novillito",
-        "ars_kg": 4465.84
+        "ars_kg": 4462.94
       },
       {
         "id": "vaquillona",
         "nombre": "Vaquillona",
-        "ars_kg": 4318.97
+        "ars_kg": 4295.08
       },
       {
         "id": "vaca",
         "nombre": "Vaca",
-        "ars_kg": 2871.24
+        "ars_kg": 3012.6
       }
     ],
-    "indice_general": 3714.88
+    "indice_general": 3933.82
   },
   "chicago": {
-    "fecha": "02/11/2026",
+    "fecha": "03/11/2026",
     "fuente": "CBOT – cierre informado por BCR",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 442.67,
-        "var": -6.52
+        "usd": 442.04,
+        "var": -0.64
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 176.47,
-        "var": 0.2
+        "usd": 174.21,
+        "var": -2.66
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 222.85,
-        "var": 0.92
+        "usd": 220.37,
+        "var": -2.85
       }
     ]
   }
