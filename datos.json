@@ -1,41 +1,41 @@
 {
-  "actualizado": "2026-11-04T21:41:00-03:00",
-  "actualizado_texto": "Miércoles 04/11/2026, 21:41 h",
+  "actualizado": "2026-11-06T14:41:00-03:00",
+  "actualizado_texto": "Viernes 06/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "03/11/2026",
+    "fecha": "05/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1542.0,
+    "tc_divisa_bna_comprador": 1536.5,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 540500,
-        "usd": 350.52,
-        "ars_ant": 542000,
+        "ars": 535000,
+        "usd": 348.19,
+        "ars_ant": 540000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 272934,
-        "usd": 177.0,
-        "ars_ant": 275000,
+        "ars": 275000,
+        "usd": 178.98,
+        "ars_ant": 275500,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 316000,
-        "usd": 204.93,
-        "ars_ant": 314980,
+        "ars": 316519,
+        "usd": 206.0,
+        "ars_ant": 315100,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 794130,
-        "usd": 515.0,
-        "ars_ant": 799000,
+        "ars": 775932,
+        "usd": 505.0,
+        "ars_ant": 783870,
         "estimado": true
       },
       {
@@ -49,15 +49,15 @@
     ]
   },
   "dolar": {
-    "fecha": "04/11/2026",
+    "fecha": "05/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1542.0,
-        "venta": null,
-        "fecha": "03/11/2026"
+        "compra": 1536.5,
+        "venta": 1545.5,
+        "fecha": "05/11/2026"
       },
       {
         "id": "bna",
@@ -69,35 +69,35 @@
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1546.0
+        "venta": 1545.5
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1584.76
+        "venta": 1579.5
       },
       {
         "id": "blue",
         "nombre": "Blue",
-        "compra": 1545.0,
-        "venta": 1565.0
+        "compra": 1530.0,
+        "venta": 1550.0
       }
     ]
   },
   "futuros_a3": {
-    "fecha": "03/11/2026",
+    "fecha": "05/11/2026",
     "fuente": "A3 Mercados (ex Matba-Rofex), vía BCR",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 351.5
+        "usd": 349.3
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 187.4
+        "usd": 187.2
       },
       {
         "grano": "Trigo",
@@ -107,98 +107,98 @@
     ]
   },
   "futuros_cosecha": {
-    "fecha": "03/11/2026",
+    "fecha": "05/11/2026",
     "fuente": "A3 Mercados, ajustes informados por BCR",
     "contratos": [
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Enero 2027",
-        "usd": 356.0,
+        "usd": 354.6,
         "pago_default": "2027-01-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Mayo 2027",
-        "usd": 343.5,
+        "usd": 339.0,
         "pago_default": "2027-05-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Julio 2027",
-        "usd": 353.6,
+        "usd": 348.7,
         "pago_default": "2027-07-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Septiembre 2027",
-        "usd": 358.0,
+        "usd": 353.0,
         "pago_default": "2027-09-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Noviembre 2027",
-        "usd": 363.0,
+        "usd": null,
         "pago_default": "2027-11-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Abril 2027",
-        "usd": 187.6,
+        "usd": null,
         "pago_default": "2027-04-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Julio 2027",
-        "usd": 186.4,
+        "usd": 186.9,
         "pago_default": "2027-07-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Septiembre 2027",
-        "usd": 191.0,
+        "usd": 191.1,
         "pago_default": "2027-09-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Diciembre 2027",
-        "usd": 196.0,
+        "usd": null,
         "pago_default": "2027-12-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Diciembre 2026",
-        "usd": 206.0,
+        "usd": null,
         "pago_default": "2026-12-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Enero 2027",
-        "usd": 212.0,
+        "usd": null,
         "pago_default": "2027-01-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Marzo 2027",
-        "usd": 220.0,
+        "usd": null,
         "pago_default": "2027-03-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Julio 2027",
-        "usd": 227.0,
+        "usd": null,
         "pago_default": "2027-07-15"
       },
       {
@@ -238,26 +238,26 @@
     "indice_general": 3685.35
   },
   "chicago": {
-    "fecha": "03/11/2026",
-    "fuente": "CBOT – cierre informado por BCR",
+    "fecha": "05/11/2026",
+    "fuente": "CBOT – cierre informado por MAGyP (Informe Diario del Mercado de Granos)",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 442.04,
-        "var": -0.64
+        "usd": 433.95,
+        "var": -4.5
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 174.21,
-        "var": -2.66
+        "usd": 173.22,
+        "var": -1.67
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 220.37,
-        "var": -2.85
+        "usd": 220.19,
+        "var": 0.28
       }
     ]
   }
