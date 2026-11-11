@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-09T14:41:00-03:00",
-  "actualizado_texto": "Lunes 09/11/2026, 14:41 h",
+  "actualizado": "2026-11-10T21:41:00-03:00",
+  "actualizado_texto": "Martes 10/11/2026, 21:41 h",
   "pizarra": {
     "fecha": "05/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
@@ -211,53 +211,53 @@
     ]
   },
   "hacienda": {
-    "fecha": "06/11/2026",
+    "fecha": "10/11/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
       {
         "id": "novillo",
         "nombre": "Novillo (INMAG)",
-        "ars_kg": 4184.37
+        "ars_kg": 4103.17
       },
       {
         "id": "novillito",
         "nombre": "Novillito",
-        "ars_kg": 4343.03
+        "ars_kg": 4473.58
       },
       {
         "id": "vaquillona",
         "nombre": "Vaquillona",
-        "ars_kg": 4104.43
+        "ars_kg": 4243.39
       },
       {
         "id": "vaca",
         "nombre": "Vaca",
-        "ars_kg": 2749.63
+        "ars_kg": 2865.53
       }
     ],
-    "indice_general": 3615.42
+    "indice_general": 3777.28
   },
   "chicago": {
-    "fecha": "06/11/2026",
-    "fuente": "CBOT – cierre informado por medios (TN/Examedia), coherente con el cierre previo de MAGyP",
+    "fecha": "10/11/2026",
+    "fuente": "CBOT – cierre informado por medios (Ámbito, La Nación)",
     "contratos": [
       {
         "grano": "Soja",
-        "posicion": "Nov 2026",
-        "usd": 437.35,
-        "var": 3.4
+        "posicion": "Ene 2027",
+        "usd": 451.21,
+        "var": 14.61
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 174.11,
-        "var": 0.89
+        "usd": 176.76,
+        "var": 3.84
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 216.97,
-        "var": -3.22
+        "usd": 217.8,
+        "var": 1.75
       }
     ]
   }
