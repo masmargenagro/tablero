@@ -1,41 +1,41 @@
 {
-  "actualizado": "2026-11-12T21:41:00-03:00",
-  "actualizado_texto": "Jueves 12/11/2026, 21:41 h",
+  "actualizado": "2026-11-13T14:41:00-03:00",
+  "actualizado_texto": "Viernes 13/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "11/11/2026",
+    "fecha": "12/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1535.0,
+    "tc_divisa_bna_comprador": 1536.5,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 545000,
-        "usd": 355.05,
-        "ars_ant": 540000,
+        "ars": 540000,
+        "usd": 351.45,
+        "ars_ant": 545000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 275000,
-        "usd": 179.15,
-        "ars_ant": 274300,
+        "ars": 275800,
+        "usd": 179.5,
+        "ars_ant": 275000,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 299500,
-        "usd": 195.11,
-        "ars_ant": 299620,
+        "ars": 288900,
+        "usd": 188.02,
+        "ars_ant": 299500,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 760000,
-        "usd": 495.11,
-        "ars_ant": 768000,
+        "ars": 752885,
+        "usd": 490.0,
+        "ars_ant": 760000,
         "estimado": true
       },
       {
@@ -75,7 +75,7 @@
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1581.31
+        "venta": 1573.95
       },
       {
         "id": "blue",
