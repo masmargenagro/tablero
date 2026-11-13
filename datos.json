@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-12T14:41:00-03:00",
-  "actualizado_texto": "Jueves 12/11/2026, 14:41 h",
+  "actualizado": "2026-11-12T21:41:00-03:00",
+  "actualizado_texto": "Jueves 12/11/2026, 21:41 h",
   "pizarra": {
     "fecha": "11/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
@@ -49,15 +49,15 @@
     ]
   },
   "dolar": {
-    "fecha": "11/11/2026",
+    "fecha": "12/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1535.0,
-        "venta": 1544.0,
-        "fecha": "11/11/2026"
+        "compra": 1536.5,
+        "venta": 1545.5,
+        "fecha": "12/11/2026"
       },
       {
         "id": "bna",
@@ -69,13 +69,13 @@
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1544.0
+        "venta": 1545.5
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1572.64
+        "venta": 1581.31
       },
       {
         "id": "blue",
@@ -211,53 +211,53 @@
     ]
   },
   "hacienda": {
-    "fecha": "10/11/2026",
+    "fecha": "12/11/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
       {
         "id": "novillo",
         "nombre": "Novillo (INMAG)",
-        "ars_kg": 4103.17
+        "ars_kg": 4393.97
       },
       {
         "id": "novillito",
         "nombre": "Novillito",
-        "ars_kg": 4473.58
+        "ars_kg": 4818.27
       },
       {
         "id": "vaquillona",
         "nombre": "Vaquillona",
-        "ars_kg": 4243.39
+        "ars_kg": 4595.87
       },
       {
         "id": "vaca",
         "nombre": "Vaca",
-        "ars_kg": 2865.53
+        "ars_kg": 3046.88
       }
     ],
-    "indice_general": 3777.28
+    "indice_general": 4314.17
   },
   "chicago": {
-    "fecha": "10/11/2026",
-    "fuente": "CBOT – cierre informado por medios (Ámbito, La Nación)",
+    "fecha": "12/11/2026",
+    "fuente": "CBOT – cierre informado por BCR (vía Ruralnet)",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Ene 2027",
-        "usd": 451.21,
-        "var": 14.61
+        "usd": 447.91,
+        "var": -4.13
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 176.76,
-        "var": 3.84
+        "usd": 174.21,
+        "var": -2.26
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 217.8,
-        "var": 1.75
+        "usd": 214.68,
+        "var": -6.25
       }
     ]
   }
