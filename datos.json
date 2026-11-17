@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-16T14:41:00-03:00",
-  "actualizado_texto": "Lunes 16/11/2026, 14:41 h",
+  "actualizado": "2026-11-16T21:41:00-03:00",
+  "actualizado_texto": "Lunes 16/11/2026, 21:41 h",
   "pizarra": {
     "fecha": "13/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
@@ -49,39 +49,39 @@
     ]
   },
   "dolar": {
-    "fecha": "13/11/2026",
+    "fecha": "16/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1534.5,
-        "venta": 1543.5,
-        "fecha": "13/11/2026"
+        "compra": 1542.0,
+        "venta": 1551.0,
+        "fecha": "16/11/2026"
       },
       {
         "id": "bna",
         "nombre": "Oficial BNA",
-        "compra": 1520.0,
-        "venta": 1570.0
+        "compra": 1525.0,
+        "venta": 1575.0
       },
       {
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1543.5
+        "venta": 1551.0
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1576.2
+        "venta": 1585.72
       },
       {
         "id": "blue",
         "nombre": "Blue",
-        "compra": 1550.0,
-        "venta": 1570.0
+        "compra": 1580.0,
+        "venta": 1600.0
       }
     ]
   },
