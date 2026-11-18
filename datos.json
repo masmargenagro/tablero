@@ -1,49 +1,49 @@
 {
-  "actualizado": "2026-11-17T21:41:00-03:00",
-  "actualizado_texto": "Martes 17/11/2026, 21:41 h",
+  "actualizado": "2026-11-18T14:41:00-03:00",
+  "actualizado_texto": "Miércoles 18/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "16/11/2026",
+    "fecha": "17/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1542.0,
+    "tc_divisa_bna_comprador": 1543.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 545000,
-        "usd": 353.44,
+        "ars": 550000,
+        "usd": 356.45,
         "ars_ant": 545000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 271400,
-        "usd": 176.01,
-        "ars_ant": 269300,
+        "ars": 268500,
+        "usd": 174.01,
+        "ars_ant": 271400,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 285270,
+        "ars": 285455,
         "usd": 185.0,
-        "ars_ant": 284000,
+        "ars_ant": 285270,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 750000,
-        "usd": 486.38,
+        "ars": 741000,
+        "usd": 480.23,
         "ars_ant": 750000,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 277600,
-        "usd": 180.03,
-        "ars_ant": 276300,
+        "ars": 277740,
+        "usd": 180.0,
+        "ars_ant": 277600,
         "estimado": true
       }
     ]
