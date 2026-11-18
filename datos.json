@@ -1,63 +1,63 @@
 {
-  "actualizado": "2026-11-16T21:41:00-03:00",
-  "actualizado_texto": "Lunes 16/11/2026, 21:41 h",
+  "actualizado": "2026-11-17T21:41:00-03:00",
+  "actualizado_texto": "Martes 17/11/2026, 21:41 h",
   "pizarra": {
-    "fecha": "13/11/2026",
+    "fecha": "16/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1534.5,
+    "tc_divisa_bna_comprador": 1542.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
         "ars": 545000,
-        "usd": 355.16,
-        "ars_ant": 540000,
+        "usd": 353.44,
+        "ars_ant": 545000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 269300,
-        "usd": 175.5,
-        "ars_ant": 275800,
-        "estimado": true
+        "ars": 271400,
+        "usd": 176.01,
+        "ars_ant": 269300,
+        "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 284000,
-        "usd": 185.08,
-        "ars_ant": 288900,
+        "ars": 285270,
+        "usd": 185.0,
+        "ars_ant": 284000,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
         "ars": 750000,
-        "usd": 488.76,
-        "ars_ant": 752885,
+        "usd": 486.38,
+        "ars_ant": 750000,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 276300,
-        "usd": 180.0,
-        "ars_ant": null,
+        "ars": 277600,
+        "usd": 180.03,
+        "ars_ant": 276300,
         "estimado": true
       }
     ]
   },
   "dolar": {
-    "fecha": "16/11/2026",
+    "fecha": "17/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1542.0,
-        "venta": 1551.0,
-        "fecha": "16/11/2026"
+        "compra": 1543.0,
+        "venta": 1552.0,
+        "fecha": "17/11/2026"
       },
       {
         "id": "bna",
@@ -69,136 +69,136 @@
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1551.0
+        "venta": 1552.0
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1585.72
+        "venta": 1594.58
       },
       {
         "id": "blue",
         "nombre": "Blue",
-        "compra": 1580.0,
-        "venta": 1600.0
+        "compra": 1585.0,
+        "venta": 1605.0
       }
     ]
   },
   "futuros_a3": {
-    "fecha": "13/11/2026",
+    "fecha": "16/11/2026",
     "fuente": "A3 Mercados (ex Matba-Rofex), ajustes vía AFA",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 358.4
+        "usd": 356.0
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 189.1
+        "usd": 187.5
       },
       {
         "grano": "Trigo",
         "posicion": "Nov 2026",
-        "usd": 194.0
+        "usd": 189.0
       }
     ]
   },
   "futuros_cosecha": {
-    "fecha": "13/11/2026",
-    "fuente": "A3 Mercados, ajustes del 13/11/2026 (vía AFA)",
+    "fecha": "16/11/2026",
+    "fuente": "A3 Mercados, ajustes del 16/11/2026 (vía AFA)",
     "contratos": [
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Enero 2027",
-        "usd": 360.5,
+        "usd": 359.5,
         "pago_default": "2027-01-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Mayo 2027",
-        "usd": 345.1,
+        "usd": 344.7,
         "pago_default": "2027-05-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Julio 2027",
-        "usd": 355.1,
+        "usd": 354.4,
         "pago_default": "2027-07-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Septiembre 2027",
-        "usd": 361.0,
+        "usd": 359.8,
         "pago_default": "2027-09-15"
       },
       {
         "id": "soja",
         "grano": "Soja",
         "posicion": "Noviembre 2027",
-        "usd": 366.5,
+        "usd": 365.6,
         "pago_default": "2027-11-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Abril 2027",
-        "usd": 189.6,
+        "usd": 189.1,
         "pago_default": "2027-04-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Julio 2027",
-        "usd": 190.0,
+        "usd": 189.4,
         "pago_default": "2027-07-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Septiembre 2027",
-        "usd": 194.5,
+        "usd": 194.0,
         "pago_default": "2027-09-15"
       },
       {
         "id": "maiz",
         "grano": "Maíz",
         "posicion": "Diciembre 2027",
-        "usd": 198.5,
+        "usd": 198.0,
         "pago_default": "2027-12-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Diciembre 2026",
-        "usd": 198.0,
+        "usd": 192.0,
         "pago_default": "2026-12-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Enero 2027",
-        "usd": 206.8,
+        "usd": 201.3,
         "pago_default": "2027-01-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Marzo 2027",
-        "usd": 212.7,
+        "usd": 206.0,
         "pago_default": "2027-03-15"
       },
       {
         "id": "trigo",
         "grano": "Trigo",
         "posicion": "Julio 2027",
-        "usd": 218.5,
+        "usd": 213.5,
         "pago_default": "2027-07-15"
       },
       {
@@ -211,31 +211,31 @@
     ]
   },
   "hacienda": {
-    "fecha": "13/11/2026",
+    "fecha": "17/11/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
       {
         "id": "novillo",
         "nombre": "Novillo (INMAG)",
-        "ars_kg": 3929.88
+        "ars_kg": 4078.59
       },
       {
         "id": "novillito",
         "nombre": "Novillito",
-        "ars_kg": 4167.53
+        "ars_kg": 4339.06
       },
       {
         "id": "vaquillona",
         "nombre": "Vaquillona",
-        "ars_kg": 4152.77
+        "ars_kg": 4115.05
       },
       {
         "id": "vaca",
         "nombre": "Vaca",
-        "ars_kg": 2745.06
+        "ars_kg": 2840.93
       }
     ],
-    "indice_general": 3462.93
+    "indice_general": 3706.93
   },
   "chicago": {
     "fecha": "12/11/2026",
