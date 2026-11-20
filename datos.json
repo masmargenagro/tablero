@@ -1,33 +1,33 @@
 {
-  "actualizado": "2026-11-19T21:41:00-03:00",
-  "actualizado_texto": "Jueves 19/11/2026, 21:41 h",
+  "actualizado": "2026-11-20T14:41:00-03:00",
+  "actualizado_texto": "Viernes 20/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "18/11/2026",
-    "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
-    "tc_divisa_bna_comprador": 1550.5,
+    "fecha": "19/11/2026",
+    "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario (girasol y sorgo: S/C el 19/11; se mantiene el estimativo del 18/11)",
+    "tc_divisa_bna_comprador": 1556.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
         "ars": 550000,
-        "usd": 354.72,
+        "usd": 353.47,
         "ars_ant": 550000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 271000,
-        "usd": 174.78,
-        "ars_ant": 268500,
+        "ars": 272000,
+        "usd": 174.81,
+        "ars_ant": 271000,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 286850,
-        "usd": 185.0,
-        "ars_ant": 285455,
+        "ars": 294084,
+        "usd": 189.0,
+        "ars_ant": 286850,
         "estimado": false
       },
       {
@@ -86,23 +86,23 @@
     ]
   },
   "futuros_a3": {
-    "fecha": "16/11/2026",
-    "fuente": "A3 Mercados (ex Matba-Rofex), ajustes vía AFA",
+    "fecha": "19/11/2026",
+    "fuente": "A3 Mercados (ex Matba-Rofex), cotización informada por BCR",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Nov 2026",
-        "usd": 356.0
+        "usd": 355.0
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 187.5
+        "usd": 185.0
       },
       {
         "grano": "Trigo",
         "posicion": "Nov 2026",
-        "usd": 189.0
+        "usd": 193.0
       }
     ]
   },
