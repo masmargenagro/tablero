@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-19T14:41:00-03:00",
-  "actualizado_texto": "Jueves 19/11/2026, 14:41 h",
+  "actualizado": "2026-11-19T21:41:00-03:00",
+  "actualizado_texto": "Jueves 19/11/2026, 21:41 h",
   "pizarra": {
     "fecha": "18/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario",
@@ -49,39 +49,39 @@
     ]
   },
   "dolar": {
-    "fecha": "18/11/2026",
+    "fecha": "19/11/2026",
     "fuente": "BNA (divisa y billete), BCRA (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
         "id": "divisa",
         "nombre": "Divisa BNA",
-        "compra": 1550.5,
-        "venta": 1559.5,
-        "fecha": "18/11/2026"
+        "compra": 1556.0,
+        "venta": 1565.0,
+        "fecha": "19/11/2026"
       },
       {
         "id": "bna",
         "nombre": "Oficial BNA",
-        "compra": 1530.0,
-        "venta": 1580.0
+        "compra": 1535.0,
+        "venta": 1585.0
       },
       {
         "id": "mayorista",
         "nombre": "Mayorista",
         "compra": null,
-        "venta": 1559.5
+        "venta": 1565.0
       },
       {
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1622.89
+        "venta": 1638.31
       },
       {
         "id": "blue",
         "nombre": "Blue",
-        "compra": 1610.0,
-        "venta": 1630.0
+        "compra": 1620.0,
+        "venta": 1640.0
       }
     ]
   },
@@ -238,26 +238,26 @@
     "indice_general": 3382.35
   },
   "chicago": {
-    "fecha": "18/11/2026",
+    "fecha": "19/11/2026",
     "fuente": "CBOT – cierre informado por BCR (vía Ruralnet)",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Ene 2027",
-        "usd": 447.09,
+        "usd": 443.69,
         "var": -3.49
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 171.45,
-        "var": -4.63
+        "usd": 172.83,
+        "var": 1.38
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 209.44,
-        "var": -8.82
+        "usd": 212.47,
+        "var": 3.31
       }
     ]
   }
