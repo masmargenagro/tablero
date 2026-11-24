@@ -1,55 +1,55 @@
 {
-  "actualizado": "2026-11-23T21:41:00-03:00",
-  "actualizado_texto": "Lunes 23/11/2026, 21:41 h",
+  "actualizado": "2026-11-24T14:41:00-03:00",
+  "actualizado_texto": "Martes 24/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "19/11/2026",
-    "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario (girasol y sorgo: S/C el 19/11, estimativo de la Cámara para esa fecha)",
-    "tc_divisa_bna_comprador": 1556.0,
+    "fecha": "20/11/2026",
+    "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario (girasol y sorgo: S/C el 20/11, estimativo de la Cámara para esa fecha)",
+    "tc_divisa_bna_comprador": 1571.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 550000,
-        "usd": 353.47,
+        "ars": 560000,
+        "usd": 356.46,
         "ars_ant": 550000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 272000,
-        "usd": 174.81,
-        "ars_ant": 271000,
+        "ars": 270212,
+        "usd": 172.0,
+        "ars_ant": 272000,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 294084,
-        "usd": 189.0,
-        "ars_ant": 286850,
+        "ars": 298490,
+        "usd": 190.0,
+        "ars_ant": 294084,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 746880,
+        "ars": 754080,
         "usd": 480.0,
-        "ars_ant": 744240,
+        "ars_ant": 746880,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 287860,
-        "usd": 185.0,
-        "ars_ant": 279090,
+        "ars": 282780,
+        "usd": 180.0,
+        "ars_ant": 287860,
         "estimado": true
       }
     ]
   },
   "dolar": {
-    "fecha": "20/11/2026",
+    "fecha": "24/11/2026 (mayorista: cierre 20/11)",
     "fuente": "BNA (divisa y billete), BCRA/mercado (mayorista), relevamiento de mercado (MEP, blue)",
     "cotizaciones": [
       {
@@ -62,8 +62,8 @@
       {
         "id": "bna",
         "nombre": "Oficial BNA",
-        "compra": 1545.0,
-        "venta": 1595.0
+        "compra": 1550.0,
+        "venta": 1600.0
       },
       {
         "id": "mayorista",
@@ -75,13 +75,13 @@
         "id": "mep",
         "nombre": "MEP",
         "compra": null,
-        "venta": 1682.79
+        "venta": 1700.0
       },
       {
         "id": "blue",
         "nombre": "Blue",
-        "compra": 1645.0,
-        "venta": 1665.0
+        "compra": 1655.0,
+        "venta": 1675.0
       }
     ]
   },
