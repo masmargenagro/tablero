@@ -1,49 +1,49 @@
 {
-  "actualizado": "2026-11-25T21:41:00-03:00",
-  "actualizado_texto": "Miércoles 25/11/2026, 21:41 h",
+  "actualizado": "2026-11-26T14:41:00-03:00",
+  "actualizado_texto": "Jueves 26/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "24/11/2026",
-    "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario (girasol y sorgo: S/C el 24/11 y sin estimativo publicado; se mantiene el último estimativo de la Cámara, del 20/11)",
-    "tc_divisa_bna_comprador": 1584.0,
+    "fecha": "25/11/2026",
+    "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario (girasol y sorgo: S/C, precio estimativo de la Cámara)",
+    "tc_divisa_bna_comprador": 1595.0,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 570000,
-        "usd": 359.85,
-        "ars_ant": 560000,
+        "ars": 574700,
+        "usd": 360.31,
+        "ars_ant": 570000,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 272448,
-        "usd": 172.0,
-        "ars_ant": 270212,
+        "ars": 271000,
+        "usd": 169.91,
+        "ars_ant": 272448,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 293040,
-        "usd": 185.0,
-        "ars_ant": 298490,
+        "ars": 303000,
+        "usd": 189.97,
+        "ars_ant": 293040,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 754080,
+        "ars": 765600,
         "usd": 480.0,
-        "ars_ant": 746880,
+        "ars_ant": null,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 282780,
-        "usd": 180.0,
-        "ars_ant": 287860,
+        "ars": 290000,
+        "usd": 181.82,
+        "ars_ant": null,
         "estimado": true
       }
     ]
@@ -238,26 +238,26 @@
     "indice_general": 3440.11
   },
   "chicago": {
-    "fecha": "24/11/2026",
-    "fuente": "CBOT – cierre informado por BCR (vía Ruralnet y Agroempresario)",
+    "fecha": "25/11/2026",
+    "fuente": "CBOT – cierre del 25/11 (vía AFA/CMA; 26/11 sin operaciones por Thanksgiving)",
     "contratos": [
       {
         "grano": "Soja",
         "posicion": "Ene 2027",
-        "usd": 453.43,
-        "var": 1.29
+        "usd": 457.11,
+        "var": 3.67
       },
       {
         "grano": "Maíz",
         "posicion": "Dic 2026",
-        "usd": 170.86,
-        "var": 0.0
+        "usd": 173.12,
+        "var": 2.26
       },
       {
         "grano": "Trigo",
         "posicion": "Dic 2026",
-        "usd": 209.35,
-        "var": -2.85
+        "usd": 207.79,
+        "var": -1.56
       }
     ]
   }
