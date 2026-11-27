@@ -1,49 +1,49 @@
 {
-  "actualizado": "2026-11-26T21:41:00-03:00",
-  "actualizado_texto": "Jueves 26/11/2026, 21:41 h",
+  "actualizado": "2026-11-27T14:41:00-03:00",
+  "actualizado_texto": "Viernes 27/11/2026, 14:41 h",
   "pizarra": {
-    "fecha": "25/11/2026",
+    "fecha": "26/11/2026",
     "fuente": "Cámara Arbitral de Cereales – Bolsa de Comercio de Rosario (girasol y sorgo: S/C, precio estimativo de la Cámara)",
-    "tc_divisa_bna_comprador": 1595.0,
+    "tc_divisa_bna_comprador": 1592.5,
     "granos": [
       {
         "id": "soja",
         "nombre": "Soja",
-        "ars": 574700,
-        "usd": 360.31,
-        "ars_ant": 570000,
+        "ars": 570000,
+        "usd": 357.93,
+        "ars_ant": 574700,
         "estimado": false
       },
       {
         "id": "maiz",
         "nombre": "Maíz",
-        "ars": 271000,
-        "usd": 169.91,
-        "ars_ant": 272448,
+        "ars": 270725,
+        "usd": 170.0,
+        "ars_ant": 271000,
         "estimado": false
       },
       {
         "id": "trigo",
         "nombre": "Trigo",
-        "ars": 303000,
-        "usd": 189.97,
-        "ars_ant": 293040,
+        "ars": 297000,
+        "usd": 186.5,
+        "ars_ant": 303000,
         "estimado": false
       },
       {
         "id": "girasol",
         "nombre": "Girasol",
-        "ars": 765600,
-        "usd": 480.0,
-        "ars_ant": null,
+        "ars": 748475,
+        "usd": 470.0,
+        "ars_ant": 765600,
         "estimado": true
       },
       {
         "id": "sorgo",
         "nombre": "Sorgo",
-        "ars": 290000,
-        "usd": 181.82,
-        "ars_ant": null,
+        "ars": 289500,
+        "usd": 181.79,
+        "ars_ant": 290000,
         "estimado": true
       }
     ]
@@ -211,31 +211,31 @@
     ]
   },
   "hacienda": {
-    "fecha": "25/11/2026",
+    "fecha": "27/11/2026",
     "fuente": "Mercado Agroganadero de Cañuelas – precios definitivos",
     "categorias": [
       {
         "id": "novillo",
         "nombre": "Novillo (INMAG)",
-        "ars_kg": 4066.04
+        "ars_kg": 4061.44
       },
       {
         "id": "novillito",
         "nombre": "Novillito",
-        "ars_kg": 4245.94
+        "ars_kg": 4296.54
       },
       {
         "id": "vaquillona",
         "nombre": "Vaquillona",
-        "ars_kg": 3983.15
+        "ars_kg": 3926.24
       },
       {
         "id": "vaca",
         "nombre": "Vaca",
-        "ars_kg": 2721.68
+        "ars_kg": 2674.18
       }
     ],
-    "indice_general": 3440.11
+    "indice_general": 3460.01
   },
   "chicago": {
     "fecha": "25/11/2026",
